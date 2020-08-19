@@ -44,10 +44,14 @@ export default class TodoList extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
+                
+                <h1>ToDo List
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseForm" role="button" aria-expanded="false" aria-controls="collapseForm">Add
+                    </a>
+                </h1>
                 <AddToDo onAdd={this.addToDo}></AddToDo>
-                <h1>ToDo List</h1>
-                <table className="table">
+                <table className="table table-striped table-hover">
                     <thead>
                         <tr>
                             <th>Id</th>
